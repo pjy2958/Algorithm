@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class homunculus2309 {
+public class Homunculus2309 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class homunculus2309 {
 			homun.add(num);
 			sum += num;
 		}
-		aa: for (int i = 0; i < homun.size() - 1; i++) {
+		aa : for (int i = 0; i < homun.size() - 1; i++) {
 			for (int j = i + 1; j < homun.size(); j++) {
 				int temp = homun.get(i) + homun.get(j);
 				if (sum - temp == 100) {
@@ -27,6 +27,7 @@ public class homunculus2309 {
 				}
 			}
 		}
+		
 		Collections.sort(homun);
 		for(int a : homun) {
 			System.out.println(a);
